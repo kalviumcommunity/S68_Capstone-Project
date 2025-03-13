@@ -1,0 +1,76 @@
+# JyothiryaFlames - Scented Candle eCommerce Platform
+
+## **Project Idea & Brief Description**
+
+JyothiryaFlames is an eCommerce platform dedicated to selling handcrafted scented candles. This project is part of my capstone journey and serves as a foundation for my real-world business. The website will feature a seamless shopping experience, secure payments, and an intuitive user interface.
+
+### **Key Features:**
+
+- User Authentication (Signup/Login)
+- Product Listings & Categorization
+- Shopping Cart & Checkout Process
+- Multiple Payment Methods (PhonePe, Razorpay, UPI, Bank Transfer)
+- Order Tracking & User Dashboard
+- Admin Panel for Inventory Management
+
+## **Design Process**
+
+I have successfully completed the **Low-Fidelity and High-Fidelity Designs** for JyothiryaFlames using **Figma**. These designs outline the structure, user flow, and interface of the platform. The final prototype showcases a user-friendly layout with an intuitive shopping experience.
+
+## **Project Timeline (Day-by-Day Plan for 1.5 Months)**
+
+### **Week 1: Research & Planning**
+
+- Day 1-2: Finalizing project scope and requirements
+- Day 3-4: Wireframing and creating low-fidelity prototypes (Figma) ✅
+- Day 5-6: Structuring the backend (Express.js, MongoDB)
+- Day 7: Setting up the frontend (React + Vite)
+
+### **Week 2: User Authentication & Database Setup**
+
+- Day 8-9: Implementing signup/login functionality (JWT Authentication)
+- Day 10-11: Connecting MongoDB for storing user data
+- Day 12-13: Testing authentication flow
+- Day 14: Debugging and improving security measures
+
+### **Week 3: Product Management System**
+
+- Day 15-16: Creating product schema in MongoDB
+- Day 17-18: Building API endpoints for adding, editing, and deleting products
+- Day 19-20: Designing product listing and detail pages in React
+- Day 21: Testing CRUD operations for products
+
+### **Week 4: Shopping Cart & Checkout Process**
+
+- Day 22-23: Implementing cart functionality (Add/Remove Items)
+- Day 24-25: Connecting cart with database for persistence
+- Day 26-27: Integrating payment gateways (PhonePe, Razorpay, UPI, Bank Transfer)
+- Day 28: Testing checkout flow
+
+### **Week 5: Order Management & User Dashboard**
+
+- Day 29-30: Implementing order history & order tracking
+- Day 31-32: Creating the user dashboard for order management
+- Day 33: Adding wishlist functionality
+- Day 34: Debugging and UI enhancements
+
+### **Week 6: Admin Panel & Deployment**
+
+- Day 35-36: Building the admin panel for product & order management
+- Day 37-38: Testing the admin functionalities
+- Day 39-40: Preparing the project for deployment (Render for backend, Vercel for frontend)
+- Day 41: Final debugging & testing
+
+### **Week 7: Final Review & Launch**
+
+- Day 42-43: Conducting UI/UX improvements
+- Day 44-45: Performance optimization & security testing
+- Day 46: Deploying the website & running final tests
+- Day 47: Official launch of JyothiryaFlames!
+
+## **Final Notes**
+
+This project is a stepping stone towards building JyothiryaFlames into a fully functional eCommerce brand. While it starts as an academic project, my goal is to transform it into a real business, ensuring continuous improvements and scaling beyond this assignment.
+
+This README provides a structured plan and ensures originality. Let me know if you need any modifications! 🚀
+
