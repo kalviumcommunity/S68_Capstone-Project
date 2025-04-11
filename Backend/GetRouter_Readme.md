@@ -14,6 +14,6 @@ Secured the routes
 authMiddleware can be added to protect the routes if needed.
 Ensures only authenticated users can access user data.
 
-Notes
+Notes:
 Passwords are never sent in the response due to select: false in the schema.
 These routes are important for building features like dashboards, account management, and admin panels.
