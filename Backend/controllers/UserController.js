@@ -1,5 +1,5 @@
 const Usermodel=require('../Modle/Usermodel') 
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const JWT=require('jsonwebtoken')
 require('dotenv').config()
 
