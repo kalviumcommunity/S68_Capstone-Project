@@ -68,7 +68,7 @@ const registerUser = async (req, res) => {
       if (!isMatch) return res.status(400).json({ message: "Invalid credentials" });
   
    
-      const token = JWT.sign({ id: user._id }, process.env.JWT_SCERET, { expiresIn: "3d" });
+      const token = JWT.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "3d" });
   
     
       res.status(200).json({
@@ -87,8 +87,47 @@ const registerUser = async (req, res) => {
       console.log(error)
     }
   };
+
+  const getAllUsers = async (req, res) => {
+    try {
+      const users = await Usermodel.find(); 
+      res.status(200).json({
+        message: "Fetched all users successfully",
+        users,
+      });
+    } catch (error) {
+      res.status(500).json({
+        message: "Failed to fetch users",
+        error: error.message,
+      });
+    }
+  };
+
+  const getUserById = async (req, res) => {
+    try {
+      const userId = req.params.id;
   
-module.exports={registerUser,loginUser}
+      const user = await Usermodel.findById(userId); 
+  
+      if (!user) {
+        return res.status(404).json({ message: "User not found" });
+      }
+  
+      res.status(200).json({
+        message: "User fetched successfully",
+        user,
+      });
+    } catch (error) {
+      res.status(500).json({
+        message: "Error fetching user",
+        error: error.message,
+      });
+    }
+  };
+  
+  
+  
+module.exports={registerUser,loginUser,getAllUsers,getUserById}
 
 
 
