@@ -4,6 +4,7 @@ const {
     loginUser,
     getAllUsers,
     getUserById,
+    updateUser,
 }=require('../controllers/UserController')
 
 const authMiddleware=require('../Middleware/auth')
@@ -14,6 +15,7 @@ router.post("/register",registerUser);
 router.post("/login", loginUser);
 router.get("/allusers",authMiddleware,getAllUsers)
 router.get("/allusers/:id",authMiddleware,getUserById)
+router.put("/updateuser/:id",authMiddleware,updateUser)
 
 
 
